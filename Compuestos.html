@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segunda Practica</title>
+    </head>
+    <body>
+    <h1>EXPLICACION DE ELEMENTOS COMPUESTOS</h1>
+    <!--Labels / Etiquetas -->
+    <label for="Input1">Ejemplo de input de texto</label>
+    <br>
+ <!--Entrada de input-->
+<input type="text" id="Input1" name="Input1" maxlength="50">
+<br><br>
+<!--Tipos de input de texto -->
+<h2>Tipos de input texto</h2>
+<hr>
+<label for="correo1">input de correo</label><br>
+<input type="email" id="correo1" name="correo1"><br><br>
+
+<label for="numero1">input de numero</label><br>
+<input type="number" id="numero1" name="numero1"><br><br>
+
+<label for="password1">input de contraseña</label><br>
+<input type="password" id="password1" name="password1"><br><br>
+
+<label for="telefono1">input de telefono</label><br>
+<input type="tel" id="telefono1" name="telefono1" maxlength="10"><br><br>
+
+<label for="url1">input de url</label><br>
+<input type="url" id="url1" name="url1"><br><br>
+<hr>
+
+<!--Input de seleccion muntiple-->
+
+<h2>Input de seleccion multiple</h2><br>
+<h3>INGREDIENTES</h3>
+<hr>
+
+<input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+<label for="Cebolla">cebolla</label><br>
+
+<label for="Piña">Piña</label>
+<input type="checkbox" id="topping2" name="topping2" value="Piña"><br>
+
+<input type="checkbox" id="topping3" name="topping3" value="Cilantro">
+<label for="Cilantro">Cilantro</label><br>
+
+<label for="Pepino">Pepino</label>
+<input type="checkbox" id="topping4" name="topping4" value="Pepino"><br>
+
+<input type="checkbox" id="topping5" name="topping5" value="Habanero">
+<label for="Habanero">Habanero</label><br>
+
+<hr>
+
+<!--Input de seleccion unica-->
+
+<h2>Input de seleccion unica</h2><br>
+<h3>Salsas Picosas</h3>
+
+<input type="radio" id="Salsa roja" name="Salsas" value="Salsa roja">
+<label for="Salsa roja">Salsa roja</label><br>
+
+<input type="radio" id="Salsa verde" name="Salsas" value="Salsa verde">
+<label for="Salsa verde">Salsa verde</label><br>
+
+<input type="radio" id="Salsa naranja" name="Salsas" value="Salsa naranja">
+<label for="Salsa naranja">Salsa naranja</label><br>
+
+<input type="radio" id="Salsa de cacahuate" name="Salsas" value="Salsa de cacahuate">
+<label for="Salsa de cacahuate">Salsa de cacahuate</label><br>
+<hr>
+
+<!--Select-->
+<h2>Select</h2>
+
+<label for="carnes">Carnes</label>
+<select id="carnes" value="carnes">
+    <option value="suadero">Suadero</option>
+    <option value="pastor">Pastor</option>
+    <option value="langaniza">Longaniza</option>
+    <option value="campechano">Campechano</option>
+    <option value="tripa">Tripa</option>
+    <option value="cuerito">Cuerito</option>
+    <option value="vegetariano">Vegetariano</option>
+    <option value="Burrito">Burrito</option>
+</select><br>
+<hr>
+
+<!--Select/input -->
+<h2>Refresco</h2>
+
+<label for="refresco">Seleccionar bebida</label><br>
+<input list="refresco">
+<datalist id="refresco">
+    <option value="Jarrito">
+    <option value="Mundet">3 Lt</option>
+    <option value="Coca-cola">600 ml</option>
+    <option value="Coca-cola">2 Lt</option>
+    <option value="Coca-cola">2.5 Lt</option>
+    <option value="Coca-cola">3 Lt</option>
+    <option value="Sprite">3 Lt</option>
+    <option value="Delawer">600 ml</option>
+    <option value="Del valle naranja">3 Lt</option>
+    <option value="Lulu de uva">3 Lt</option>
+</datalist>
+<br><br>
+
+<hr>
+<!--Input de fecha-->
+
+<h2>Input de fecha</h2><br>
+
+<input type="date" id="fecha1" name="fecha1"><br>
+<input type="datetime-local" id="fecha2" name="fecha2"><br>
+<input type="time" id="fecha3" name="fecha3"><br>
+<input type="month" id="fecha4" name="fecha4"><br>
+<input type="week" id="fecha5" name="fecha5"><br><br>
+
+<hr>
+
+<!--Input de archivo-->
+
+<h2>Input de archivo</h2><br>
+<input type="file" id="archive1" name="archive1" multiple><br><br>
+
+<hr>
+
+<h2>Input de color</h2><br>
+<input type="color" id="color1" name="color1"><br><br>
+
+<hr>
+
+<h2>Input de rango</h2><br>
+<label for="vol">Volumen (0 y 50)</label>
+<input type="range" id="vol" name="vol" min="0" max="50" value="15"><br>
+
+<hr>
+
+<!--Input de botones-->
+<h2>Input de boton</h2>
+
+<input type="reset"><br>
+<input type="submit"><br>
+<input type="button" id="boton1" name="boton1" value="boton1" onclick="alert('What you buyng?');"><br>
+
+<hr>
+
+<!--Formularios-->
+<h2>Ejemplo de formulario</h2><br>
+
+<form action="/accion.js" id="form1" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <input type="submit" value="submit">
+    <input type="reset">
+</form>
+
+<label for="apellido">Apellido</label>
+<input type="text" id="apellido" name="apellido" form="form1">
+
+</body>
+</html>
